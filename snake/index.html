@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#1b2d37" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Snake 5510" />
+  <title>Nokia 5510 Snake</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="phone" aria-label="Nokia 5510 esintili Snake oyun konsolu">
+      <div class="earpiece" aria-hidden="true"></div>
+      <div class="brand">NOKIA</div>
+      <div class="screen-shell">
+        <div class="screen-topbar"><span>SNAKE</span><span id="status">HAZIR</span></div>
+        <div class="lcd">
+          <canvas id="game" width="288" height="216" aria-label="Snake oyun alanı"></canvas>
+          <div id="overlay" class="overlay"><div class="overlay-title">SNAKE II</div><div class="overlay-sub">Başlamak için ▶ tuşuna bas</div></div>
+        </div>
+        <div class="scorebar"><span>SKOR <b id="score">0</b></span><span>REKOR <b id="highScore">0</b></span></div>
+      </div>
+      <div class="softkeys">
+        <button id="startBtn" class="pill" type="button">▶</button>
+        <button id="pauseBtn" class="pill" type="button">Ⅱ</button>
+      </div>
+      <div class="controls" aria-label="Yön tuşları">
+        <button class="key up" data-dir="up" type="button" aria-label="Yukarı">▲</button>
+        <button class="key left" data-dir="left" type="button" aria-label="Sol">◀</button>
+        <button class="key center" id="centerBtn" type="button" aria-label="Başlat veya duraklat">●</button>
+        <button class="key right" data-dir="right" type="button" aria-label="Sağ">▶</button>
+        <button class="key down" data-dir="down" type="button" aria-label="Aşağı">▼</button>
+      </div>
+      <div class="num-pad" aria-hidden="true">
+        <span>1</span><span>2<br><small>ABC</small></span><span>3<br><small>DEF</small></span>
+        <span>4<br><small>GHI</small></span><span>5<br><small>JKL</small></span><span>6<br><small>MNO</small></span>
+        <span>7<br><small>PQRS</small></span><span>8<br><small>TUV</small></span><span>9<br><small>WXYZ</small></span>
+        <span>*</span><span>0</span><span>#</span>
+      </div>
+      <div class="chin"><span>5510</span></div>
+    </section>
+    <p class="hint">Telefon: yön tuşları • Bilgisayar: oklar / WASD • Space: duraklat</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
