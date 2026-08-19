@@ -1,9 +1,0 @@
-{
-  "name": "Nokia 5510 Snake",
-  "short_name": "Snake 5510",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#0d1114",
-  "theme_color": "#1b2d37",
-  "description": "Nokia 5510 esintili mobil uyumlu klasik Snake oyunu."
-}
